@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+
+         // Create an array, and ask from the user to insert 6 numbers to it.
+var arr = [];
+for (var counter = 0 ; counter < 6; counter++)
+{
+   arr [counter] = Number(prompt("enter a number"));
+
+}
+console.table(arr);
+
+for (var number of arr) 
+{
+  console.log(number);       
+}
+
+var max = arr[0];
+var min = arr[0];
+
+for (var number of arr) 
+{
+  if( number > max )
+    max = number;
+  
+  if(number < min)
+    min = number ;
+
+}
+
+console.log(`this is the max number ${max}`);
+console.log(`this is the min number ${min}`);
+var sum = 0 ;
+for (var number of arr) {
+   sum += number ;
+}
+
+console.log(`this is the sum of arr : ${sum}`);
+
+ 
+var odd = [];
+var even = [];
+var indexe = 0 ;
+var indexo = 0 ;
+
+for (var number of arr){
+  number = Math.floor(number);
+  if(number % 2 === 0 ){
+    even[indexe] = number ;
+    indexe++;
+  }
+  else{
+    odd[indexo] = number ;
+    indexo++; 
+  }
+
+}
+console.table(odd);
+console.table(even);
+
+
+ var maxMin =  0 ;
+ var indexe = [0] ;
+ for(var number of arr)
+ {
+     if(number > min && number < max){
+         maxMin[indexe]=number;
+         indexe++; 
+     }  
+     console.log(number);
+}
+
+  console.log(`----------------------talat----------------`);
+var matrix = [
+            ["true","true"],
+            ["true","false"],
+            ["false","true"],
+            ["false","false"]
+        ];
+        var row = 0;
+        while(row < matrix.length){
+            var col = 0;
+            while(col < matrix[row].length){
+                console.log(` ${matrix[row][col]}`);
+               col++;
+            }
+            row++;
+            
+        }
+        console.table(matrix);
+                    
+
+    </script>
+    
+</body>
+</html>
