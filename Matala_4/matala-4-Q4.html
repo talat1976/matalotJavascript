@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+        function todolar (num){
+            num = Math.floor(num)
+            num*=3.5;
+            return num;
+        }
+        function toEuro (num){
+            num = Math.floor(num)
+            num*=4;
+            return num;
+        }
+        function DolartoShekel (num){
+            num = Math.floor(num)
+            num/=3.5;
+            return num;
+        }
+        function EurotoShekel (num){
+            num = Math.floor(num)
+            num/=4;
+            return num;
+        }
+        console.log(`if you need change  Shekel to dolar prees : 1`);
+        console.log(`if you need change  Shekel to Euro prees : 2`);
+        console.log(`if you need change dolar to Shekel  prees :3`);
+        console.log(`if you need change Euro to Shekel prees : 4`);
+        var x = prompt();
+        if(x == 1){
+            var sum = prompt()
+        sum = todolar(sum);
+        console.log(sum);
+        }
+        if(x == 2){
+            var sum = prompt()
+        sum =  toEuro(sum);
+        console.log(sum);
+        }
+        if(x == 3){
+            var sum = prompt()
+        sum = DolartoShekel(sum);
+        console.log(sum);
+        }
+        if(x == 4){
+            var sum = prompt()
+        sum = EurotoShekel(sum);
+        console.log(sum);
+        }
+    </script>
+    
+</body>
+</html>
